@@ -10,12 +10,12 @@ namespace Day19_User_Reg_Problem
     {
         static void Main(string[] args)
         {
-            string Numeric;
+            string SpecialChar;
             bool result;
-            NumericNumberValidate numbervalidate = new NumericNumberValidate();
-            Console.WriteLine("Enter Password: ");
-            Numeric = Console.ReadLine();
-            result = numbervalidate.numericCheck(Numeric);
+            SpecialCharacterValidate specialCharvalidate = new SpecialCharacterValidate();
+            Console.WriteLine("Enter Your Password: ");
+            SpecialChar = Console.ReadLine();
+            result = specialCharvalidate.SpecialCharCheck(SpecialChar);
             Console.WriteLine(result);
 
             Console.ReadLine();
