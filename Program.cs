@@ -10,18 +10,13 @@ namespace Day19_User_Reg_Problem
     {
         static void Main(string[] args)
         {
-            string Name;
+            string Email;
             bool result;
-            ValidateLastName validatelastname = new ValidateLastName();
-            Console.WriteLine("Enter Last Name: ");
-            Name = Console.ReadLine();
-            result = validatelastname.lastNameCheck(Name);
+            EmailValidation validateemail = new EmailValidation();
+            Console.WriteLine("Enter Email: ");
+            Email = Console.ReadLine();
+            result = validateemail.emailCheck(Email);
             Console.WriteLine(result);
-
-            if (Name.Length < 3)
-            {
-                Console.WriteLine("Enter minimum of 3 characters");
-            }
             Console.ReadLine();
             }
     }
