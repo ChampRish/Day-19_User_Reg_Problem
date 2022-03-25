@@ -10,15 +10,13 @@ namespace Day19_User_Reg_Problem
     {
         static void Main(string[] args)
         {
-            string phone;
+            string Pass;
             bool result;
-            ValidPhonNumbers validatePhoneNumber = new ValidPhonNumbers();
-            Console.WriteLine("Enter PH number");
-            phone = Console.ReadLine();
-            result = validatePhoneNumber.PhonmumcheckCheck(phone);
-
-            Console.WriteLine(result);
-            Console.ReadLine();
+            UpperCaseValidate uppercasevalidate = new UpperCaseValidate();
+            Console.WriteLine("Enter Password: ");
+            Pass = Console.ReadLine();
+            result = uppercasevalidate.UpperCaseCheck(Pass);
+            Console.WriteLine(result); ;
             Console.ReadLine();
             }
     }
