@@ -10,13 +10,14 @@ namespace Day19_User_Reg_Problem
     {
         static void Main(string[] args)
         {
-            string Pass;
+            string Numeric;
             bool result;
-            UpperCaseValidate uppercasevalidate = new UpperCaseValidate();
+            NumericNumberValidate numbervalidate = new NumericNumberValidate();
             Console.WriteLine("Enter Password: ");
-            Pass = Console.ReadLine();
-            result = uppercasevalidate.UpperCaseCheck(Pass);
-            Console.WriteLine(result); ;
+            Numeric = Console.ReadLine();
+            result = numbervalidate.numericCheck(Numeric);
+            Console.WriteLine(result);
+
             Console.ReadLine();
             }
     }
