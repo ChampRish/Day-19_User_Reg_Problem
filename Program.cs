@@ -10,13 +10,15 @@ namespace Day19_User_Reg_Problem
     {
         static void Main(string[] args)
         {
-            string Email;
+            string phone;
             bool result;
-            EmailValidation validateemail = new EmailValidation();
-            Console.WriteLine("Enter Email: ");
-            Email = Console.ReadLine();
-            result = validateemail.emailCheck(Email);
+            ValidPhonNumbers validatePhoneNumber = new ValidPhonNumbers();
+            Console.WriteLine("Enter PH number");
+            phone = Console.ReadLine();
+            result = validatePhoneNumber.PhonmumcheckCheck(phone);
+
             Console.WriteLine(result);
+            Console.ReadLine();
             Console.ReadLine();
             }
     }
