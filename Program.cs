@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace Day19_User_Reg_Problem
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-                string FirstName;
-                bool result;
-                UserFirstName Check = new UserFirstName();
+            string Name;
+            bool result;
+            ValidateLastName validatelastname = new ValidateLastName();
+            Console.WriteLine("Enter Last Name: ");
+            Name = Console.ReadLine();
+            result = validatelastname.lastNameCheck(Name);
+            Console.WriteLine(result);
 
-                Console.WriteLine(" Enter First Name :");
-                FirstName = Console.ReadLine();
-
-                result = Check.Validate_First_Name(FirstName);
-                Console.WriteLine(result);
-
-            if (FirstName.Length < 3)
+            if (Name.Length < 3)
             {
                 Console.WriteLine("Enter minimum of 3 characters");
             }
