@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Day19_User_Reg_Problem
 {
-    internal class NumericNumberValidate
+    public class NumericNumberValidate
     {
+        public string RegexPattern = "^[a-zA-Z0-9]{7,}[0-9]{1}$";
+        public bool numericCheck(string numericNumber)
+        {
+            return Regex.IsMatch(numericNumber, RegexPattern);
+        }
     }
 }
